@@ -1,4 +1,4 @@
-# PROJECT #14: RADIAL SKILL GAME
+# PROJECT #13: RADIAL SKILL GAME
 
 Status: Local playable mechanics prototype (0.1.0); satirical content planning
 Owner: Leterel
@@ -155,8 +155,8 @@ Prefer local development and free tools where practical.
 Do not install software without approval.
 Do not incur costs without approval.
 
-Keep Project #14 separate from all other projects.
-Do not modify Project #13 or Project #15.
+Keep Project #13 separate from all other projects.
+Do not modify unrelated projects from within this project’s tools.
 
 ## Project Continuity
 
