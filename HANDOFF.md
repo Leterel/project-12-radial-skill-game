@@ -5,9 +5,9 @@ Ausgangscommit: 7c611c51afad358116371c9bf9b0405864cd7ec5
 Arbeitsbranch: codex/portfolio-20261102
 
 ## Ausgangszustand und Ergebnis
-Balance-Modus mit festen Simulationsschritten, zufälligen Störungen und konfigurierbarer Steuerung ist auf dem Feature-Branch implementiert. Neuer Browsernachweis fehlt; alter Zielring bleibt unter /legacy-target.html.
+Balance-Modus mit festen Simulationsschritten, zufälligen Störungen und konfigurierbarer Steuerung ist auf dem Feature-Branch implementiert. Browserabnahme mit synthetischem Controller bestanden; alter Zielring bleibt unter /legacy-target.html.
 
-9 Modell-/Kontrolltests bestanden, einschließlich deterministischer Balance bei verschiedenen Bildraten. Browserabnahme des neuen Modus vor Ausführung durch Nutzungslimit der automatischen Freigabeprüfung blockiert. Physischer Controller nicht getestet.
+9 Modell-/Kontrolltests bestanden, einschließlich deterministischer Balance bei verschiedenen Bildraten. Browserabnahme des neuen Modus inzwischen bestanden: Tastatur, Pause/Fortsetzen, gespeicherte Tastenbelegung, synthetische Controllersteuerung, 390px-Layout und alter Zielring. Physischer Controller nicht getestet.
 
 ## Änderungen dieser Arbeitsrunde
 
@@ -30,8 +30,10 @@ Balance-Modus mit festen Simulationsschritten, zufälligen Störungen und konfig
 Nur einzeln geprüfte Quell-/Dokumentationsdateien. Keine generierten Medien, Testdaten oder Zugangsdaten werden aufgenommen.
 
 ## Offen und nächste Etappe
-Neuen Balance-Modus mit npm run test:browser in isoliertem Chrome abnehmen, mobile Pointersteuerung prüfen und Schwierigkeit mit echten Spielversuchen beurteilen. Nicht ohne Browserabnahme in den Hauptbranch übernehmen.
+Browserabnahme bestanden. Als Nächstes mobile Haltesteuerung und Schwierigkeit mit echten Spielversuchen beurteilen; physischer Controller und andere Browser bleiben ungetestet.
 
 Keine Anleitungen zu Straftaten. Bestehenden Modus nicht löschen. Physische Controller-Unterstützung erst nach tatsächlichem Test behaupten.
 
 Kein Nachweis realer Nutzer, Einnahmen oder universeller Plattformunterstützung. Dokumentation ist kein Ersatz für fehlende Hardware-, Netzwerk- oder Produktabnahmen.
+
+Browser-Nachprüfung 02.11.2026: fünf Prüfgruppen bestanden; Desktop-/Mobilansichten angesehen. Keine physische Controllerabnahme, kein öffentliches Release.

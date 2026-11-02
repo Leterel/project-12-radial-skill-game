@@ -1,7 +1,7 @@
 # Agentenleitfaden — The Social Game / Radial Skill Game
 
 ## Einstieg
-Balance-Modus mit festen Simulationsschritten, zufälligen Störungen und konfigurierbarer Steuerung ist auf dem Feature-Branch implementiert. Neuer Browsernachweis fehlt; alter Zielring bleibt unter /legacy-target.html.
+Balance-Modus mit festen Simulationsschritten, zufälligen Störungen und konfigurierbarer Steuerung ist auf dem Feature-Branch implementiert. Browserabnahme mit synthetischem Controller bestanden; alter Zielring bleibt unter /legacy-target.html.
 
 Lies README.md, TESTING.md und HANDOFF.md. Anforderungen und vorhandene Funktionen unterscheiden. Technische Grundlagen: README.md. Die bestehenden Detaildokumente bleiben maßgeblich; keine leeren SPEC-/ARCHITECTURE-/TODO-Kopien erzeugen. Offene Arbeit und Verlauf: README.md; konkrete Einnahmegrenzen: MONETIZATION.md, soweit vorhanden.
 
@@ -21,7 +21,9 @@ Tests: `npm test`. Bei mehreren Befehlen einzeln ausführen und jeden Exitcode p
 - Projektwerkzeuge ändern keine anderen Projektquellen. Build-/Testartefakte in isolierten, ignorierten Arbeitsordnern halten. Vorhandene Ausgaben nicht unbesehen überschreiben.
 
 ## Nächste sichere Etappe
-Neuen Balance-Modus mit npm run test:browser in isoliertem Chrome abnehmen, mobile Pointersteuerung prüfen und Schwierigkeit mit echten Spielversuchen beurteilen. Nicht ohne Browserabnahme in den Hauptbranch übernehmen.
+Browserabnahme bestanden. Als Nächstes mobile Haltesteuerung und Schwierigkeit mit echten Spielversuchen beurteilen; physischer Controller und andere Browser bleiben ungetestet.
 
 ## Übergabe
 HANDOFF.md aktualisieren: Ausgangscommit/Branch, konkrete Änderungsliste, ausgeführte Befehle, Ergebnis, ausgelassene Tests samt Grund, Risiken und nächste Etappe. Nur tatsächlich ausgeführte Tests als bestanden ausweisen. Vor Merge Diff und Tests prüfen; externe Freigaben bleiben offen.
+
+Browser-Nachprüfung 02.11.2026: fünf Prüfgruppen bestanden; Desktop-/Mobilansichten angesehen. Keine physische Controllerabnahme, kein öffentliches Release.

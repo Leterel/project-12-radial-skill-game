@@ -207,11 +207,12 @@ frühere Demo ist unter `/legacy-target.html` erreichbar.
 
 `npm test`: neun Modell-/Kontrolltests bestanden. Fester Zeitschritt liefert
 gleiches Verhalten bei 5/30/60/144 FPS; Pause, Punkte, Folgen, Tasten und
-synthetische Controllerwerte geprüft. **Neue Browser-/Mobilabnahme noch nicht
-ausgeführt:** Die automatische Freigabeprüfung scheiterte vor Ausführung am
-Nutzungslimit. Kein physischer Controller oder universeller Plattformpass.
+synthetische Controllerwerte geprüft. **Browserabnahme inzwischen bestanden:** Tastatur, Pause/Fortsetzen, gespeicherte
+Belegung, synthetische Controllersteuerung und 390px-Layout wurden geprüft. Kein physischer Controller oder universeller Plattformpass.
 
 Für die spätere Browserabnahme `npm ci --ignore-scripts` (falls Playwright fehlt),
 vorhandenes Chrome und `npm run test:browser` verwenden. Alternativ ein
 vorhandenes Playwright-1.58.2-Modul über PLAYWRIGHT_MODULE angeben. Kein
 Browserdownload oder globale Installation ist für den normalen Spielstart nötig.
+
+Browser-Nachprüfung 02.11.2026: fünf Prüfgruppen bestanden; Desktop-/Mobilansichten angesehen. Keine physische Controllerabnahme, kein öffentliches Release.
