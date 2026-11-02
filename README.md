@@ -1,6 +1,6 @@
 # PROJECT #14: RADIAL SKILL GAME
 
-Status: Concept / planning
+Status: Local playable mechanics prototype (0.1.0); satirical content planning
 Owner: Leterel
 Created: 2026-10-28
 
@@ -165,3 +165,17 @@ This repository is the persistent project notebook.
 Future sessions should read this README before proceeding.
 Distinguish confirmed decisions from proposed features.
 Do not claim a playable game exists until it has been built.
+
+## First prototype — 2026-11-02
+
+Run `npm start`, open http://127.0.0.1:8864, then select Neue Runde.
+Node.js 22+; no packages to install. `npm test` checks circular geometry,
+wraparound hits, score penalties, pause and round termination.
+
+A closed 16-sector ring supports continuous mouse/touch aiming, A/D or arrow
+rotation and Space/button confirmation. Aim at the green sector for 30 seconds;
+closer hits score more. P pauses; hiding the tab requires explicit resume.
+Sector numbers are neutral placeholders, not the final satirical categories.
+No controller support, sound, progression, persistence or native package yet.
+Next: test the difficulty with people, then add configurable controls and
+controller support before expanding the content.
