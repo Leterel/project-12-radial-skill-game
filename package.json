@@ -1,1 +1,17 @@
-{"name":"radial-skill-game","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test test/*.test.mjs","start":"node server.mjs"},"engines":{"node":">=22"}}
+{
+  "name": "radial-skill-game",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node server.mjs",
+    "test:browser": "node test/browser-balance.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

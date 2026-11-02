@@ -1,6 +1,6 @@
-# PROJECT #13: RADIAL SKILL GAME
+# The Social Game / Radial Skill Game
 
-Status: Local playable mechanics prototype (0.1.0); satirical content planning
+Status: Balance-mode feature branch (0.2.0), model-tested; browser acceptance pending.
 Owner: Leterel
 Created: 2026-10-28
 
@@ -186,3 +186,32 @@ The round clock now consumes elapsed foreground time independently of rendering
 speed. Movement still limits large frame jumps. Regression checks cover 5, 10,
 20, 30, 60 and 144 FPS, pause, invalid durations and round termination.
 The original code is available under the MIT license in LICENSE.
+
+## Entwicklung und Übergabe
+
+[AGENTS.md](AGENTS.md) bündelt den Einstieg für Entwickler und KI-Agenten; [TESTING.md](TESTING.md) nennt reproduzierbare Prüfungen und deren Grenzen. Der aktuelle Übergabestand steht in [HANDOFF.md](HANDOFF.md).
+
+## Balance-Modus 0.2.0 — 02.11.2026
+
+`npm start` öffnet jetzt den neuen Balance-Modus. 45 Sekunden in der Mitte
+bleiben, zufällige Störungen ausgleichen; drei Ausrutscher beenden die Runde.
+Die provisorischen Kategorien sind satirische Ereignisnamen, keine Anleitungen.
+
+WASD, Pfeile und Nummernblock steuern; vier Richtungen sind neu belegbar.
+Ein Standard-Controller wird über linken Stick und Starttaste berücksichtigt.
+Tastenpräferenzen bleiben lokal, Runden werden nicht gespeichert. Fokusverlust,
+verdeckter Tab und große Zeitlücken pausieren und erfordern bewusstes Fortsetzen.
+
+Der alte Zielring-Code und alle bisherigen Dateien bleiben erhalten; die
+frühere Demo ist unter `/legacy-target.html` erreichbar.
+
+`npm test`: neun Modell-/Kontrolltests bestanden. Fester Zeitschritt liefert
+gleiches Verhalten bei 5/30/60/144 FPS; Pause, Punkte, Folgen, Tasten und
+synthetische Controllerwerte geprüft. **Neue Browser-/Mobilabnahme noch nicht
+ausgeführt:** Die automatische Freigabeprüfung scheiterte vor Ausführung am
+Nutzungslimit. Kein physischer Controller oder universeller Plattformpass.
+
+Für die spätere Browserabnahme `npm ci --ignore-scripts` (falls Playwright fehlt),
+vorhandenes Chrome und `npm run test:browser` verwenden. Alternativ ein
+vorhandenes Playwright-1.58.2-Modul über PLAYWRIGHT_MODULE angeben. Kein
+Browserdownload oder globale Installation ist für den normalen Spielstart nötig.
