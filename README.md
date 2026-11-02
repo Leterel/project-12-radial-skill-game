@@ -179,3 +179,10 @@ Sector numbers are neutral placeholders, not the final satirical categories.
 No controller support, sound, progression, persistence or native package yet.
 Next: test the difficulty with people, then add configurable controls and
 controller support before expanding the content.
+
+### Timing correction — 2026-11-02
+
+The round clock now consumes elapsed foreground time independently of rendering
+speed. Movement still limits large frame jumps. Regression checks cover 5, 10,
+20, 30, 60 and 144 FPS, pause, invalid durations and round termination.
+The original code is available under the MIT license in LICENSE.
